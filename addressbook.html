@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通讯录应用</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>通讯录</h1>
+            <div class="header-controls">
+                <button id="bookmark-filter" class="filter-btn" aria-pressed="false">
+                    <span class="star-icon">★</span> 仅显示书签
+                </button>
+                <button id="export-btn" class="action-btn">导出联系人</button>
+                <input type="file" id="import-input" accept=".csv" style="display: none;">
+                <button id="import-btn" class="action-btn">导入联系人</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="add-contact-section">
+                <h2>添加联系人</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">电话号码</label>
+                        <div id="phone-container">
+                            <div class="input-group">
+                                <input type="tel" class="phone-input" pattern="[0-9\-\+\s\(\)]+" title="请输入有效的电话号码">
+                                <button type="button" class="remove-btn" disabled>×</button>
+                            </div>
+                        </div>
+                        <button type="button" id="add-phone" class="add-btn">+ 添加电话号码</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">电子邮件</label>
+                        <div id="email-container">
+                            <div class="input-group">
+                                <input type="email" class="email-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="请输入有效的电子邮件地址">
+                                <button type="button" class="remove-btn" disabled>×</button>
+                            </div>
+                        </div>
+                        <button type="button" id="add-email" class="add-btn">+ 添加电子邮件</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="social">社交媒体账号</label>
+                        <input type="text" id="social" name="social">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">地址</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">保存联系人</button>
+                        <button type="reset" class="reset-btn">重置</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="contact-list-section">
+                <h2>联系人列表</h2>
+                <div id="contact-list" class="contact-list">
+                    <!-- 联系人将通过JavaScript动态添加 -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
+      
