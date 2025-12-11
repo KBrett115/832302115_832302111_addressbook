@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #4c84af;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -59,7 +59,7 @@ header h1 {
 
 .action-btn {
     background-color: white;
-    color: #4CAF50;
+    color: #4c84af;
     font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ main {
 
 .add-contact-section h2, .contact-list-section h2 {
     margin-bottom: 20px;
-    color: #4CAF50;
+    color: #4c84af;
 }
 
 .form-group {
@@ -170,12 +170,12 @@ main {
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #4c84af;
     color: white;
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #4c84af;
 }
 
 .reset-btn {
@@ -197,7 +197,7 @@ main {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #4c84af;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -245,7 +245,7 @@ main {
 }
 
 .contact-info strong {
-    color: #4CAF50;
+    color: #4c84af;
 }
 
 .contact-actions {
@@ -285,12 +285,12 @@ input:focus:invalid {
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #4c84af;
     color: white;
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #4c84af;
 }
 
 .reset-btn {
@@ -312,7 +312,7 @@ input:focus:invalid {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #4c84af;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -360,7 +360,7 @@ input:focus:invalid {
 }
 
 .contact-info strong {
-    color: #4CAF50;
+    color: #4c84af;
 }
 
 .contact-actions {
